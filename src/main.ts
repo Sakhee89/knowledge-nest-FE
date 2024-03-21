@@ -14,7 +14,7 @@ import { User } from "./types/type.js";
 
 const firebaseConfig: FirebaseOptions = {
   apiKey: import.meta.env.VUE_APP_FIREBASE_API_KEY || "api-key-not-set",
-  authDomain: "https://knowledge-nest-fe.vercel.app/",
+  authDomain: import.meta.env.VUE_APP_FIREBASE_AUTH_DOMAIN || "env-not-set",
   projectId: import.meta.env.VUE_APP_FIREBASE_PROJECT_ID || "env-not-set",
   storageBucket:
     import.meta.env.VUE_APP_FIREBASE_STORAGE_BUCKET || "env-not-set",
